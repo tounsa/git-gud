@@ -28,7 +28,7 @@ header {
 
 header > .logo {
     display: grid;
-    grid-area: 1/2/2/3;
+    grid-area: 1/1/2/3;
     font-size: 2em;
     float: left;
 }
