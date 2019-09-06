@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+body {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.wrapper {
+    width: 360px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+header {
+    height: 110px;
+    background-color: #B49B80;
+    position: relative;
+}
+
+.logo {
+    padding: 26.55px 0 0 24.26px;
+}
+
+.headerbar {
+    height: 15px;
+    width: 360px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: #614439;
+}
+
+#headerimage {
+    display: block;
+    margin: 0 auto;
+    margin-top: -1px;
+}
+
+.contentbox {
+    height: 530px;
+    background-color: #84725C;
+}
+
+.contentimage {
+    height: 130px;
+    width: 130px;
+    margin-left: 33.3px;
+    margin-top: 33.3px;
+    float: left;
+    border: 2px solid #614439;
+    border-radius: 10px;
+}
+
+.heart {
+    content:url(../img/heart.png);
+    height: 16px;
+    width: 18px;
+    margin-top: -120.75px;
+    margin-left: 103.95px;
+    opacity: 0.4;
+}
+
+.heart:active {
+    opacity: 1;
+}
+
+#farm {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
