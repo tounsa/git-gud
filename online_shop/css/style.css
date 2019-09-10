@@ -20,6 +20,7 @@ img, #online-shop {
 }
 body {
     margin: 0 auto;
+    background-color: #BFAF97;
 }
 
 .header-left {
@@ -53,7 +54,6 @@ body {
     grid-area:  2/5/3/6;
     background-color: #BFAF97;
     box-shadow: 5px 5px 3px rgba(116, 101, 78, 0.3);
-    margin-right: 75px;
 }
 
 .icecream-grid {
@@ -106,18 +106,23 @@ a {
 
 .wrapper2 {
     display: grid;
-    grid-template-rows: 150px 10px 1fr 10px 80px;
+    grid-template-rows: 140px 10px 1fr 10px 80px;
 }
 
 header {
     display: grid;
-    grid-template: 0 / 1fr 11fr 1fr;
+    grid-template: 140px 1fr / 1fr 11fr 1fr;
     grid-area: 1/1/2/4;
     background-color: #74654E;
 }
 
 .title {
-    grid-area: 2/2/3/3;
+    grid-area: 1/2/2/3;
+}
+
+.title img {
+    max-height: auto;
+    max-width: 90%;
 }
 
 #online-shop {
@@ -127,7 +132,7 @@ header {
 }
 
 .header-right {
-    grid-area: 2/3/3/4;
+    grid-area: 1/3/2/4;
 }
 
 .header-right2 {
@@ -182,7 +187,8 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(175px, 350px));
     grid-gap: 104px;
     background-color: #BFAF97;
-    padding: 50px 0 50px 5%;
+    padding: 5% 0 5% 0;
+    margin-left: 70px;
 }
 
 .mainbox {
