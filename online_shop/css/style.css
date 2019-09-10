@@ -125,10 +125,10 @@ body {
     grid-area: 1/4/2/5;
     border: none;
     box-shadow: none;
-    width: 60%;
+    width: 50%;
     height: auto;
     padding-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 a {
@@ -139,9 +139,6 @@ a {
     display: grid;
     grid-template: 140px 10px 1fr 10px 80px / 1fr 3fr 1fr;
 }
-
-/*firefox height -39px*/
-
 .wrapper2 {
     display: grid;
     grid-template-rows: 140px 10px 1fr 10px 80px;
@@ -167,11 +164,6 @@ header {
     color: rgb(255, 255, 255);
     text-shadow: -2px -2px 0 rgb(110, 28, 28), 2px -2px 0 rgb(110, 28, 28), -2px 2px 0 rgb(110, 28, 28), 2px 2px 0 rgb(110, 28, 28);
 }
-
-/* .title img {
-    max-height: auto;
-    max-width: 90%;
-} */
 
 #online-shop {
     display: block;
