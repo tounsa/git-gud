@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 650px) {
+    .title p {
+        font-size: 3.4em !important;
+        margin-top: 37px !important;
+    }
+  }
+
 img, header p, footer p {
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
