@@ -2,14 +2,14 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 635px) {
     .title p {
         font-size: 3.4em !important;
         margin-top: 37px !important;
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 450px) {
     .title p {
         font-size: 3.4em !important;
         margin-top: 8px !important;
@@ -23,7 +23,7 @@
     }
 }
 
-@media all and (min--moz-device-pixel-ratio:0) and (max-width: 492px){
+@media all and (min--moz-device-pixel-ratio:0) and (max-width: 450px){
     .title p {
         font-size: 3.4em !important;
         margin-top: 8px !important;
