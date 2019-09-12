@@ -28,12 +28,6 @@
     }
   }
 
-  /* header height 178px
-  aside height 238px
-  main height 238px
-  footer height 120px
-   */
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 7fr 2fr 7fr 1fr;
