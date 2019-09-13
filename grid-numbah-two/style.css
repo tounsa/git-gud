@@ -2,7 +2,6 @@
     .grid-container {
         display: inline-block !important;
         width: 100%;
-        float;
     }
     .grid-container > * {
         margin-top: 2.5%;
