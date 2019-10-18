@@ -96,22 +96,22 @@
             } else {
                 document.getElementById('textOutput').innerHTML = 'Correct! You got it in ' + attempts + ' attempts.';
                 // console.log('You win!');
-                document.querySelector('body').style.backgroundImage = `url('img/numbackgreen.png')`;
+                document.querySelector('.wrapper').style.backgroundImage = `url('img/numbackgreen.png')`;
                 gameEnded();
                 }
             } else {
                 if(userGuess > computerGuess) {
                     document.getElementById('textOutput').innerHTML = 'You lose!' + '<br>The correct number was ' + computerGuess + '.';
-                    document.querySelector('body').style.backgroundImage = `url('img/numbackred.png')`;
+                    document.querySelector('.wrapper').style.backgroundImage = `url('img/numbackred.png')`;
                     gameEnded();
                 } else if (userGuess < computerGuess) {
                     document.getElementById('textOutput').innerHTML = 'You lose!' + '<br>The correct number was ' + computerGuess + '.';
-                    document.querySelector('body').style.backgroundImage = `url('img/numbackred.png')`;
+                    document.querySelector('.wrapper').style.backgroundImage = `url('img/numbackred.png')`;
                     gameEnded();
                 } else {
                     document.getElementById('textOutput').innerHTML = 'Correct! You got it in ' + attempts + ' attempts.';
                     // console.log('You win!');
-                    document.querySelector('body').style.backgroundImage = `url('img/numbackgreen.png')`;
+                    document.querySelector('.wrapper').style.backgroundImage = `url('img/numbackgreen.png')`;
                     gameEnded();
                 }
             }
