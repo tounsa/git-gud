@@ -1,0 +1,59 @@
+.wrapper {
+	max-width:1920px;
+	width:100%;
+	margin:0 auto;
+	background: url("img/stripe4.png") repeat;
+}
+
+body {
+    background: url("img/stripe4.png") repeat;
+}
+/* 
+html {
+	scroll-behavior: smooth;
+} */
+
+.ribbon {
+    background: transparent url("img/mountain.jpg") no-repeat scroll center top;
+    height: 50vh;
+    left: 0;
+    position: absolute;
+    top: -1px;
+	width: 100%;
+	background-size: cover;
+}
+
+.wzimagewrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.wzimage {
+    background-size: cover !important;
+    width: 100%;
+}
+
+.container-top	{
+	margin-top: 55px !important;
+}
+.container h2	{
+	text-transform: uppercase;
+}
+
+.row	{
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width:538px) {
+	.row	{
+		width: 100%;
+		overflow: hidden;
+	}
+	}
+
+	.main_wrap {
+		background: /*#e2d4c7*/ none repeat scroll 0 0;
+		margin-top: 0;
+		position: relative;
+	}

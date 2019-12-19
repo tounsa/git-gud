@@ -1,0 +1,163 @@
+body {
+    margin: 0 auto;
+}
+
+.headerbar {
+    position: fixed;
+    display: block;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: -180px;
+}
+
+.headerbar p {
+    color: white;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 5px 10px 5px 0;
+}
+
+
+/* first hexagon */
+
+
+
+.hexagontest {
+    position: relative;
+    width: 500px;
+    height: 288.68px;
+    background: rgb(94, 28, 72);
+    /* margin: 144px auto; */
+    margin: 180px auto 100px auto;
+}
+
+.hexagontest::before,
+.hexagontest::after {
+    content: "";
+    position: absolute;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+}
+
+.hexagontest::before {
+    bottom: 100%;
+    border-bottom: 144.34px solid rgb(94, 28, 72);
+}
+
+.hexagontest::after {
+    top: 100%;
+    border-top: 144.34px solid rgb(94, 28, 72);
+}
+
+/* image/hover  */
+
+.hexagon {
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.hexagon-in1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-120deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.hexagon-in2 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(https://cdn.discordapp.com/attachments/110347722166374400/610151357495771153/Snapchat-1377147850.jpg);
+    background-size: cover;
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-120deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.hexagon-in2:hover {
+    background-image: url(https://cdn.discordapp.com/attachments/110347722166374400/609774855813857280/Snapchat-2096598395.jpg);
+}
+
+.hexagon2 {
+    width: 200px;
+    height: 400px;
+}
+
+/* border */
+
+.hex {
+    margin-top: 70px;
+    width: 208px;
+    height: 120px;
+    background: black;
+    position: relative;
+    margin: 0 auto 100px auto;
+}
+
+.hex:before,
+.hex:after {
+    content: "";
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+    position: absolute;
+}
+
+.hex:before {
+    top: -59px;
+    border-bottom: 60px solid black;
+}
+
+.hex:after {
+    bottom: -59px;
+    border-top: 60px solid black;
+}
+
+.hex.inner {
+    background-color: whitesmoke;
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    z-index: 1;
+}
+
+.hex.inner:before {
+    border-bottom: 60px solid whitesmoke;
+}
+
+.hex.inner:after {
+    border-top: 60px solid whitesmoke;
+}
+
+.hex.inner2 {
+    background-color: rgb(160, 137, 111);
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    z-index: 2;
+}
+
+.hex.inner2:before {
+    border-bottom: 60px solid rgb(160, 137, 111);
+}
+
+.hex.inner2:after {
+    border-top: 60px solid rgb(160, 137, 111);
+}

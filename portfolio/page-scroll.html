@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section id="nav-wrapper">
+        <nav>
+            <div id="One">One</div>
+            <div id="Two">Two</div>
+            <div id="Three">Three</div>
+            <div id="Four">Four</div>
+            <div id="Five" >Five</div>
+        </nav>
+        <div class="container">
+          <ul class="top">
+            <li class="item_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore esse, qui sint autem ad accusantium sit porro sunt quidem deserunt. Ipsam maxime dolor doloremque aliquid, voluptatem officia omnis hic voluptatibus?</li>
+            <li class="item_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae inventore nisi quia repellendus ut mollitia aliquam adipisci laudantium. Accusamus soluta, placeat minima obcaecati eveniet maiores ad similique fugiat natus corrupti.</li>
+            <li class="item_3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos corporis amet vel distinctio natus nobis enim sit ullam reiciendis rem fugit autem, inventore quo impedit harum atque eius beatae error.</li>
+            <li class="item_4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, eveniet. Aspernatur doloribus eaque reprehenderit non veritatis. Maiores natus, possimus eligendi ratione reprehenderit sequi amet commodi rerum iure. Voluptates, quos ducimus.</li>
+            <li class="item_5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at illo sequi! Totam saepe adipisci ex voluptate tempora dolores, necessitatibus est consectetur eveniet praesentium. Sint ea temporibus quam quidem eius?</li>
+            <li id="Back">Back</li>
+          </ul>
+        </div>
+      </section>
+</body>
+</html>
+<style>
+.item_1 {
+    background-color: red;
+    height: 500px;
+}
+.item_2 {
+    background-color: blue;
+    height: 500px;
+}
+.item_3 {
+    background-color: green;
+    height: 500px;
+}
+.item_4 {
+    background-color: yellow;
+    height: 500px;
+}
+.item_5 {
+    background-color: purple;
+    height: 500px;
+}
+</style>
+<script>
+const buttonOne = document.getElementById("One")
+const buttonTwo = document.getElementById("Two")
+const buttonThree = document.getElementById("Three")
+const buttonFour = document.getElementById("Four")
+const buttonFive = document.getElementById("Five")
+const Back = document.getElementById("Back")
+buttonOne.addEventListener("click", () => {
+    document.getElementsByClassName('item_1')[0].scrollIntoView({behavior: "smooth"});
+})
+buttonTwo.addEventListener("click", () => {
+    document.getElementsByClassName('item_2')[0].scrollIntoView({behavior: "smooth"});
+})
+buttonThree.addEventListener("click", () => {
+    document.getElementsByClassName('item_3')[0].scrollIntoView({behavior: "smooth"});
+})
+buttonFour.addEventListener("click", () => {
+    document.getElementsByClassName('item_4')[0].scrollIntoView({behavior: "smooth"});
+})
+buttonFive.addEventListener("click", () => {
+    document.getElementsByClassName('item_5')[0].scrollIntoView({behavior: "smooth"});
+})
+Back.addEventListener("click", () => {
+    document.getElementsByClassName('top')[0].scrollIntoView({behavior: "smooth"});
+})
+</script>
