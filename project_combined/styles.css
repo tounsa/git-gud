@@ -1,0 +1,220 @@
+body {
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    "header-left header header-right"
+    "center-left center center-right"
+    "footer-left footer footer-right";
+    grid-template-rows: 106px 435px 280px;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-gap: 30px;
+    margin: 30px;
+}
+
+.header {
+    grid-area: 1/2/2/4;
+    background: rgb(245, 245, 245);
+    border-radius: 22px;
+    display: grid;
+}
+
+.logout {
+    height: 55px;
+    width: 210px;
+    background: rgb(0, 136, 152);
+    border-radius: 10px;
+    line-height: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: 120px;
+    color: white;
+}
+
+.settings {
+    content:url("img/settings.png");
+    margin-left: auto;
+    margin-top: -67px;
+    margin-right: 30px;
+    display: block;
+}
+
+.settings:active {
+    height: auto;
+    width: 58px;
+    margin-top: -68px;
+    margin-right: 29px;
+}
+
+.profile {
+    grid-area: 1/1/4/2;
+    display: grid;
+    grid-template-rows: 53px 230px 1fr; 
+    grid-template-columns: 1fr 230px 1fr;
+    background: rgb(245, 245, 245);
+    border-radius: 22px;
+    min-width: 315px;
+}
+
+.profile .profileIcon {
+    background: white;
+    grid-area: 2/2/3/3;
+    border-radius: 50%;
+    background: rgb(0, 136, 152);
+}
+
+.profile .profileInfo {
+    grid-area: 3/1/4/4;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 16px; 
+    color: rgb(42, 42, 42);
+    text-transform: uppercase;
+}
+
+.profile .profileInfo p {
+    font-size: 0.6em;
+    margin: 0px;
+    text-transform: none;
+}
+
+.calendar {
+    grid-area: center;
+    background: rgb(245, 245, 245);
+    border-radius: 22px;
+}
+
+.piechartArea {
+    grid-area: center-right;
+    display: grid;
+    grid-template-rows: 1fr 250px 1fr;
+    grid-template-columns: 1fr 250px 1fr;
+    background: rgb(245, 245, 245);
+    border-radius: 22px;
+}
+
+.circleWrapper {
+    grid-area: 2/2/3/3;
+}
+
+.calenderWeek {
+    grid-area: 3/2/4/4;
+    background: rgb(245, 245, 245);
+    border-radius: 22px;
+}
+
+/* SETTINGS */
+
+.settingsWrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 800px;
+    width: 760px;
+    margin-top: 30px;
+    margin-right: 125px;
+    display: none;
+}
+
+.settingsBox {
+    float: left;
+    height: 800px;
+    width: 738px;
+    background: rgb(252, 190, 66);
+    text-transform: uppercase;
+}
+
+.settingsBox #color {
+    display: inline-block;
+    position: relative;
+}
+
+.settingsBox ul {
+    margin-left: 50px;
+}
+
+.settingsBox li {
+    display: inline-block;
+    vertical-align: bottom;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.settingsTriangle {
+    float: left;
+    width: 0;
+    height: 0;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 22px solid rgb(252, 190, 66);
+    margin-top: 32px;
+}
+
+.settingsBox p {
+    
+    font-size: 1.5em;
+    margin-left: 50px;
+    color: rgb(45, 42, 42);
+}
+.settingsBox p:first-child {
+    margin-top: 40px;
+}
+
+/* PIE CHART */
+
+.circle {
+	position: relative;
+	text-align: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	background-color: rgb(0, 136, 152);
+	background-image: linear-gradient(91deg, transparent 50%, rgb(252, 190, 66) 50%), linear-gradient(90deg, rgb(252, 190, 66) 50%, transparent 50%);
+	-webkit-box-shadow: 0px 0px 1px 1px rgb(45, 45, 45);
+	-moz-box-shadow: 0px 0px 1px 1px rgb(45, 45, 45);
+	box-shadow: 0px 0px 1px 1px rgb(45, 45, 45);
+}
+.circle .innerCircle {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	text-align: center;
+	width: 230px;
+	height: 230px;
+	border-radius: 100%;
+	background-color: #eee;
+}
+.circle .innerCircle div {
+	position: relative;
+	top: 40px;
+	background-color: rgb(0, 136, 152);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+.circle .circleStat {
+	font-size: 75px;
+	line-height: 1.5em;
+}
+
+.circle .attendance {
+    font-size: 30px;
+    margin-top: -0.8em;
+}
